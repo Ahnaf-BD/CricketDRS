@@ -18,3 +18,22 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Xcode / Apple dev
+build/
+DerivedData/
+
+*.xcodeproj/
+*.xcworkspace/
+
+# User-specific Xcode files
+*.xcuserstate
+*.xcuserdatad/
+
+# Source control metadata
+*.xccheckout
+*.xcscmblueprint
+
+# macOS
+.DS_Store
+
