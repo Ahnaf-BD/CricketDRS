@@ -1,39 +1,84 @@
-﻿# Python
+﻿# ======================
+# Python / ML Training
+# ======================
 __pycache__/
 *.py[cod]
-*.class
 *.so
+
+# Virtual environments
 venv/
 env/
 
-# ML / Models
+# ======================
+# YOLO / ML Artifacts
+# ======================
+
+# PyTorch
 *.pt
+
+# TensorFlow Lite / TF
+*.tflite
+*.pb
+saved_model/
+tf_saved_model/
+
+# ONNX (optional intermediate)
+*.onnx
+
+# TensorRT / mobile engines (optional)
+*.engine
+
+# Training outputs
+runs/
+checkpoints/
+weights/
+
+# Large data
 datasets/
+data/
+videos/
+frames/
 models/
 
-# OS
+# ======================
+# Android / Android Studio
+# ======================
+
+# Built application files
+*.apk
+*.aab
+
+# Gradle
+.gradle/
+build/
+
+# Local SDK / machine-specific config
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+.navigation/
+captures/
+
+# External native build
+.externalNativeBuild/
+.cxx/
+
+# Logs
+*.log
+
+# ======================
+# OS / Editors
+# ======================
 .DS_Store
 Thumbs.db
 
-# IDE
+# VS Code
 .vscode/
-.idea/
 
-# Xcode / Apple dev
-build/
-DerivedData/
-
-*.xcodeproj/
-*.xcworkspace/
-
-# User-specific Xcode files
-*.xcuserstate
-*.xcuserdatad/
-
-# Source control metadata
-*.xccheckout
-*.xcscmblueprint
-
-# macOS
-.DS_Store
-
+# ======================
+# Gradle Wrapper
+# ======================
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
