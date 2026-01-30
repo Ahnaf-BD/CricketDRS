@@ -2,8 +2,8 @@ import os
 import shutil
 
 # Source and destination paths
-source_base = "../datasets"
-dest_base = "../datasets/cricket_dataset"
+source_base = "../datasets/unorganised_dataset2"
+dest_base = "../datasets/cricket_dataset_2"
 
 # Create destination folder structure
 os.makedirs(os.path.join(dest_base, "images"), exist_ok=True)
@@ -37,5 +37,5 @@ for split in ['train', 'val', 'test']:
             shutil.copy2(src, dst)
             print(f"Copied label: {split}/{file}")
 
-print("\n✅ Dataset reorganised!")
+print("\n Dataset reorganised!")
 print(f"New structure at: {os.path.abspath(dest_base)}")

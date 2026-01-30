@@ -1,6 +1,6 @@
 import os
 
-dataset_path = "../datasets/cricket_dataset"
+dataset_path = "../datasets/cricket_dataset_merged"
 
 print("=" * 60)
 print("VERIFYING CRICKET DATASET")
@@ -9,10 +9,10 @@ print("=" * 60)
 # Check if data.yaml exists
 data_yaml_path = os.path.join(dataset_path, "data.yaml")
 if os.path.exists(data_yaml_path):
-    print("\n✅ Found data.yaml")
+    print("\n Found data.yaml")
 else:
-    print("\n❌ ERROR: data.yaml not found!")
-    print(f"   Expected at: {os.path.abspath(data_yaml_path)}")
+    print("\n ERROR: data.yaml not found!")
+    print(f"Expected at: {os.path.abspath(data_yaml_path)}")
     exit()
 
 # Check each split
@@ -22,11 +22,11 @@ for split in ['train', 'val', 'test']:
     label_folder = os.path.join(dataset_path, 'labels', split)
     
     if not os.path.exists(img_folder):
-        print(f"\n❌ ERROR: {split} images folder not found!")
+        print(f"\n ERROR: {split} images folder not found!")
         continue
     
     if not os.path.exists(label_folder):
-        print(f"\n❌ ERROR: {split} labels folder not found!")
+        print(f"\n ERROR: {split} labels folder not found!")
         continue
     
     # Count files
@@ -55,11 +55,11 @@ total_images = sum([
 print(f"Total images: {total_images}")
 
 if total_images >= 3000:
-    print(f"✅ Great! You have {total_images} images (target: 3,000+)")
+    print(f"Great! You have {total_images} images (target: 3,000+)")
 elif total_images >= 1000:
-    print(f"⚠️  You have {total_images} images. Recommended: 3,000+")
+    print(f"You have {total_images} images. Recommended: 3,000+")
 else:
-    print(f"❌ Only {total_images} images. Need at least 1,000 to start")
+    print(f"Only {total_images} images. Need at least 1,000 to start")
 
-print("\n✅ Dataset verification complete!")
+print("\n Dataset verification complete!")
 print("=" * 60)
