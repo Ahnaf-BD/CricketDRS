@@ -37,5 +37,5 @@ for split in ['train', 'val', 'test']:
             shutil.copy2(src, dst)
             print(f"Copied label: {split}/{file}")
 
-print("\n Dataset reorganised!")
+print("\nDataset reorganised!")
 print(f"New structure at: {os.path.abspath(dest_base)}")
