@@ -22,8 +22,6 @@ Android Kotlin
 - BallTracker.kt
 - StumpPredictor.kt
 
-What the marker needs
-
 To run the Android app:
 - Android Studio
 - Android SDK
@@ -40,8 +38,6 @@ To inspect the Python pipeline:
 - pyyaml
 
 Python setup
-
-Create a virtual environment if needed.
 
 Windows
 python -m venv venv
